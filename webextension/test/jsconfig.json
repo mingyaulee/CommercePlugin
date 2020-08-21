@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "checkJs": true
+    },
+    "include": [
+        "*.spec.js",
+        "foundation/**/*.spec.js",
+    ]
+}

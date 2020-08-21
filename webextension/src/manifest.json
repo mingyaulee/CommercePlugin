@@ -1,0 +1,38 @@
+{
+	"manifest_version": 2,
+
+	"name": "Sitecore Commerce Plugin",
+	"description": "A plugin for Sitecore Commerce",
+	"version": "1.0",
+	"icons": {
+		"256": "Icons/icon.png"
+	},
+
+	"options_page": "Views/options.html",
+	"browser_action": {
+		"default_icon": "Icons/icon.png",
+		"default_popup": "Views/popup.html"
+	},
+	"background": {
+		"page": "Views/background.html",
+		"persistent": true
+	},
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"content_scripts": [
+		{
+			"matches": [ "*://*/*" ],
+			"js": [ "Scripts/contentScriptLoader.js" ]
+		}
+	],
+	"web_accessible_resources": [
+		"Scripts/*",
+		"Styles/*"
+	],
+	"permissions": [
+		"*://*/*",
+		"storage",
+		"tabs",
+		"notifications",
+		"webNavigation"
+	]
+}

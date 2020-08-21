@@ -1,0 +1,70 @@
+.input-group, .option-section-group {
+    position: relative;
+}
+
+.default-value-text {
+    padding-left: 8px;
+    color: #777;
+    display: none;
+}
+
+.default-value .default-value-text {
+    display: inline-block;
+}
+
+.default-value input, .default-value select, .default-value textarea {
+    color: #999;
+}
+
+.modified-value:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    background-color: #f00;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    left: -12px;
+    top: 8px;
+}
+
+.form-check-input {
+    margin-top: .4rem;
+}
+
+.option-array-group .default-value-text {
+    display: none;
+}
+
+.option-array-group.default-value > * > .default-value-text {
+    display: inline-block;
+}
+
+.array-add-textbox {
+    display: none !important;
+}
+
+.option-array-item-add, .option-array-item-delete {
+    width: 31px;
+    height: 31px;
+    line-height: 26px;
+    font-size: 26px;
+    padding: 0 0 5px 0;
+}
+
+.option-array-item-delete {
+    right: 20px;
+    z-index: 1;
+}
+
+.option-array-group.show-array-add-textbox .array-add-textbox {
+    display: inline !important;
+}
+
+.option-array-group .option-array-item:nth-child(odd) {
+    background-color: rgb(235,235,235);
+}
+
+.option-array-group .option-array-item:nth-child(even) {
+    background-color: rgb(242,242,242);
+}

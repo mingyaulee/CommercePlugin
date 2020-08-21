@@ -1,0 +1,32 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7",
+    "@babel/preset-env": "^7.11.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.2",
+    "jasmine": "^3.6.1",
+    "karma": "^4.4.1",
+    "karma-babel-preprocessor": "^8.0.1",
+    "karma-browserify": "^6.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-html-reporter": "^0.2.7",
+    "karma-jasmine": "^2.0.1",
+    "karma-source-map-support": "^1.4.0",
+    "sinon": "^8.0.1",
+    "sinon-chrome": "^3.0.1",
+    "watchify": "^3.11.1"
+  },
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

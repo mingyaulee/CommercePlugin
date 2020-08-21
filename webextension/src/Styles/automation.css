@@ -1,0 +1,7 @@
+#automationLog .log-line {
+	word-break: break-word;
+}
+
+#automationLog .log-line .log-line-timstamp {
+	white-space: nowrap;
+}
